@@ -12,7 +12,7 @@ public class Conta {
 	
 	public void setTipo(String tipo) {
 		if(tipo.equals("Corrente") || tipo.equals("Poupança")) {
-			this.tipo = tipo;
+		this.tipo = tipo;
 		}
 		else {
 			System.out.println("Tipo invalido");
