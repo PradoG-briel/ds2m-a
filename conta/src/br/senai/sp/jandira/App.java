@@ -7,33 +7,37 @@ public class App {
 	public static void main(String[] args) {
 
 		
-		Conta contaDaAna = new Conta();
+		Conta contaAna = new Conta();
 		Conta contaDoJoao = new Conta();
 		
-		contaDaAna.titular = "Ana Gomes";
-		contaDaAna.numero = "111-98";
-		contaDaAna.setTipo("Corrente");
-		contaDaAna.ativa = true;
-		contaDaAna.chequeEspecial = 200;
-		contaDaAna.depositar(100);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.depositar(30);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(50);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(500);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(50);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(80);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.depositar(100);
-		contaDaAna.mostrarSaldoDaConta();
+//		contaAna.setTitular("Ana Gomes");
+		contaAna.setNumero("111-98");
+		contaAna.setTipo("Corrente");
+		contaAna.isAtiva(true);
+		contaAna.setChequeEspecial(200.00);
+		contaAna.depositar(100);
+		contaAna.mostrarSaldoDaConta();
+		contaAna.depositar(30);
+		contaAna.mostrarSaldoDaConta();
+		contaAna.sacar(50);
+		contaAna.mostrarSaldoDaConta();
+		contaAna.sacar(500);
+		contaAna.mostrarSaldoDaConta();
+		contaAna.sacar(50);
+		contaAna.mostrarSaldoDaConta();
+		contaAna.sacar(80);
+		contaAna.mostrarSaldoDaConta();
+		contaAna.depositar(100);
+		contaAna.mostrarSaldoDaConta();
+
+		double valorSaldo= contaAna.getSaldo();
+		System.out.println("****" + contaAna.getSaldo());
 		
-		double valorSaldo= contaDaAna.getSaldo();
-		System.out.println("****" + valorSaldo);
+//		System.out.println(contaAna.getTitular());
+		System.out.println(contaAna);
 		
-		System.out.println(contaDaAna);
+		
+		Cliente cliente = new Cliente();
 
 		
 		
